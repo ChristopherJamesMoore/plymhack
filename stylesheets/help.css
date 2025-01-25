@@ -172,3 +172,68 @@ a on-hover {
     width: 100%;
     height: 100%;
 }
+body {
+    justify-content: center;
+    background:antiquewhite;
+    margin: 10px;
+    align-items: center;
+
+}
+.row{
+    margin: auto;
+    width: 43%;
+    justify-content: center;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.container-form {
+    display: flex;
+    background: darksalmon;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 620px;
+}
+.control-group{
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.row {
+    color: brown;
+    font-weight: bold;
+    font-family: verdana;
+    width: 350px;
+}
+.btn-primary {
+    color: white;
+    text-decoration: none;
+    background: coral;
+    border-radius: 30px;
+    font-family: verdana;
+    font-weight: bold;
+    width: 100px;
+    height: 80px;
+    font-size: 90%;
+}
+.form-group{
+    color: brown;
+}
+.form-group-col-md-12{
+    color: black;
+}
+
+input {
+    background-color: White;
+    border: 2px solid transparent;
+    margin: 6px;
+    height: 50px;
+    width: 280px;
+    color: white;
+    border-radius: 30px;
+    font-size: 40px;
+    color: black;
+}
