@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     background-color: #2A2A2A;
+    background-image: url("localimg/browser_bg.png");
 }
 
 .header {
