@@ -13,13 +13,37 @@ body {
     position: relative;
 }
 
+
 .navbar {
-    background-color: #2A2A2A;
-    padding: 1rem 2rem;
     display: flex;
-    justify-content: flex-end;
-    height: 60px;
+    justify-content: center; /* Center the menu items */
+    align-items: center;
+    height: 70px;
+    padding: 0 2rem;
 }
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: purple;
+}
+
 
 /* Logo Styles */
 .logo {
@@ -43,23 +67,6 @@ body {
 .logo-image {
     width: 150%;
     height: auto;
-}
-
-/* Button Styles */
-.login-button {
-    background-color: #6C47FF;
-    color: white;
-    border: none;
-    padding: 0.75rem 2rem;
-    border-radius: 9999px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: -7px;
-}
-
-.login-button:hover {
-    background-color: #5835FF;
 }
 
 /* Responsive Design */
@@ -99,15 +106,46 @@ p{
     color: white;
     font-size: 1.5rem;
     text-align: center;
-    margin-top: 1rem;
-    font-family: 'dancing script', cursive;
+    margin-top: 1.5rem;
+    font-family: 'Copperplate', serif;
+    margin-bottom: 4rem;
 
 }
-.para-one {
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
+p2{
     color: white;
-    font-family: 'dancing script', cursive;
-    margin-top: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Copperplate', serif;
+    
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    float: center;
+    margin-top: 2rem;
+    font-family: 'Copperplate', serif;
+    margin-bottom: 4rem;
+}
+a on-hover{
+    color: white;
+    text-decoration: underline;
+    font-size: 2rem;
+    text-align: center;
+    float: center;
+    margin-top: 2rem;
+    font-family: 'Copperplate', serif;
+    margin-bottom: 4rem;
+    background-color: #6C47FF;
+    border-radius: 9999px;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: -7px;
+}
+
+.socials {
+    text-align: center;
 }
