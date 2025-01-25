@@ -3,26 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Firebase User Login</title>
+  <title>Firebase Login & Status</title>
 </head>
 <body>
-  <h1>Login to Your Account</h1>
+  <h1>Firebase Login & Status</h1>
 
-  <!-- Login Form -->
+  <!-- Login Section -->
+  <h2>Login</h2>
   <form id="login-form">
     <input type="email" id="login-email" placeholder="Email" required />
     <input type="password" id="login-password" placeholder="Password" required />
     <button type="submit">Login</button>
   </form>
 
+  <!-- Sign-Up Section -->
+  <h2>Sign Up</h2>
+  <form id="signup-form">
+    <input type="email" id="signup-email" placeholder="Email" required />
+    <input type="password" id="signup-password" placeholder="Password" required />
+    <button type="submit">Sign Up</button>
+  </form>
+
   <!-- Status Message -->
   <p id="status-message"></p>
 
+  <!-- User Info -->
+  <div class="user-info" id="user-info"></div>
+
   <!-- Firebase SDKs -->
   <script type="module">
-    // Import Firebase SDKs
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
-    import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
 
     // Firebase configuration
     const firebaseConfig = {
@@ -39,9 +50,9 @@
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
 
-    // Handle Login Form Submission
+    // Handle Login
     document.getElementById("login-form").addEventListener("submit", async (e) => {
-      e.preventDefault(); // Prevent default form submission
+      e.preventDefault();
 
       const email = document.getElementById("login-email").value;
       const password = document.getElementById("login-password").value;
@@ -51,18 +62,54 @@
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
         const user = userCredential.user;
 
-        // Display success message
         statusMessage.textContent = `Welcome back, ${user.email}!`;
         statusMessage.style.color = "green";
-
-        // Optionally, redirect to another page
-        window.location.href = "dashboard.html";
       } catch (error) {
-        // Display error message
         statusMessage.textContent = `Error: ${error.message}`;
         statusMessage.style.color = "red";
       }
     });
+
+    // Handle Sign-Up
+    document.getElementById("signup-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const email = document.getElementById("signup-email").value;
+      const password = document.getElementById("signup-password").value;
+      const statusMessage = document.getElementById("status-message");
+
+      try {
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+        const user = userCredential.user;
+
+        statusMessage.textContent = `Account created successfully for ${user.email}!`;
+        statusMessage.style.color = "green";
+      } catch (error) {
+        statusMessage.textContent = `Error: ${error.message}`;
+        statusMessage.style.color = "red";
+      }
+    });
+
+    // Track Authentication State
+    const userInfo = document.getElementById("user-info");
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        userInfo.innerHTML = `
+          Logged in as: ${user.email} 
+          <button onclick="logout()">Logout</button>
+        `;
+      } else {
+        userInfo.innerHTML = `
+          <a href="index.html">Login</a>
+        `;
+      }
+    });
+
+    // Logout Function
+    async function logout() {
+      await signOut(auth);
+      alert("Logged out successfully!");
+    }
   </script>
 </body>
 </html>
