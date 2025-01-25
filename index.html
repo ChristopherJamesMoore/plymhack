@@ -9,9 +9,21 @@
 </head>
 <body>
     <header class="header">
+        <script>
+            // Initialize Clerk with your Frontend API Key
+            const clerk = Clerk({ frontendApi: 'your-clerk-frontend-api-key' });
+        
+            // Attach Sign In Button
+            const signInButton = document.getElementById('sign-in-button');
+        
+            signInButton.addEventListener('click', () => {
+              // Open the Clerk Sign In page when the button is clicked
+              clerk.redirectToSignIn();
+            });
+        </script>
         <nav class="navbar">
                 <ul class="menu">
-                    <li><a href="#"><b>Login</b></a></1i>
+                    <li><button id="sign-in-button"><b>Login</b></a></1i>
                     <li><a href="browse.html"><b>Browse</b></a></1i>
                     <li><a href="help.html"><b>Help</b></a></1i>
                 </ul>
