@@ -14,9 +14,13 @@ h1 {
 }
 
 p {
-    color: transparent;
+    color: purple;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100%;
+    background-color: navy;
+    border-radius: 30px;
+    padding: 20px 20px 20px 20px;
+
 }
 
 .navigation {
@@ -63,12 +67,12 @@ h2 {
     text-align: center;
 }
 .container-form {
-    display: flex;
-    background: transparent;
-    min-height: 50vh;
+    background: purple;
     justify-content: center;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 300px;
     border-color:#6C47FF;
 }
 .control-group{
@@ -109,7 +113,7 @@ input {
     width: 280px;
     color: white;
     border-radius: 30px;
-    font-size: 40px;
+    font-size: 20px;
     color: white;
 }
 
