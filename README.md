@@ -1,4 +1,4 @@
-# Plymhack - Social Media Platform for Music Artists
+# Sparks - Social Media Platform for Music Artists
 
 Plymhack is a dynamic social media platform designed for music artists to upload, share, and review music. This platform allows artists to engage with each other's work, get feedback, and build a community around their musical creations. It combines an intuitive frontend with a Firebase backend, ensuring a smooth and secure user experience.
 
