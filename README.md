@@ -21,14 +21,7 @@ Plymhack is a dynamic social media platform designed for music artists to upload
   - Firebase Authentication (for user login and registration)
   - Firebase Firestore (for storing user data and music metadata)
 
-## Installation
-
-### Prerequisites
-
-- A web browser
-- Firebase account (to configure Firebase services)
-
-### Final mvp demo
+## Final mvp demo
 
 https://youtu.be/fjvzG4hRfQo
 
