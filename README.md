@@ -28,8 +28,8 @@ Plymhack is a dynamic social media platform designed for music artists to upload
 - A web browser
 - Firebase account (to configure Firebase services)
 
-### Steps to Run Locally
+### Final mvp demo
 
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/ChristopherJamesMoore/plymhack.git
+https://youtu.be/fjvzG4hRfQo
+
+<img width="1470" alt="Screenshot 2025-01-26 at 7 18 04 pm" src="https://github.com/user-attachments/assets/cdda690e-f6c8-48e7-a3bd-2f6b75050fac" />
