@@ -3,8 +3,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f3e5f5; /* Light purple background */
-  color: #4a148c; /* Dark purple text */
+  background-color: #2A2A2A; /* Dark background */
+  color: #FFFFFF; /* White text */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,9 +14,9 @@ body {
 
 header {
   width: 100%;
-  background-color: #6a1b9a; /* Deep purple */
+  background-color: #6C47FF; /* Accent color */
   color: #fff;
-  padding: 15px 20px;
+  padding: 10px 20px; /* Reduced padding */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,18 +25,18 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 1.5rem; /* Reduced font size */
 }
 
 header #auth-status {
-  font-size: 1rem;
+  font-size: 0.9rem; /* Reduced font size */
 }
 
 header button {
   background-color: #fff;
-  color: #6a1b9a; /* Deep purple text */
+  color: #6C47FF; /* Accent color */
   border: none;
-  padding: 8px 15px;
+  padding: 6px 12px; /* Reduced padding */
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -44,7 +44,8 @@ header button {
 }
 
 header button:hover {
-  background-color: #f3e5f5; /* Light purple */
+  background-color: #6C47FF; /* Accent color */
+  color: #fff;
 }
 
 /* Main Content Styles */
@@ -57,7 +58,7 @@ main {
 main h2 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #4a148c; /* Dark purple */
+  color: #FFFFFF; /* White text */
 }
 
 #songs-list {
@@ -67,7 +68,7 @@ main h2 {
 }
 
 .song {
-  background-color: #fff;
+  background-color: #333333; /* Slightly lighter than body background */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -89,17 +90,17 @@ main h2 {
 .song h3 {
   font-size: 1.2rem;
   margin: 10px 0;
-  color: #4a148c; /* Dark purple */
+  color: #6C47FF; /* Accent color */
 }
 
 .song p {
   font-size: 0.9rem;
-  color: #6a1b9a; /* Deep purple */
+  color: #CCCCCC; /* Light grey text */
   margin: 5px 0;
 }
 
 .song button {
-  background-color: #6a1b9a; /* Deep purple */
+  background-color: #6C47FF; /* Accent color */
   color: #fff;
   border: none;
   padding: 8px 15px;
@@ -110,13 +111,13 @@ main h2 {
 }
 
 .song button:hover {
-  background-color: #4a148c; /* Darker purple */
+  background-color: #5a3dc0; /* Darker shade of the accent color */
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem; /* Further reduced font size for smaller screens */
   }
 
   main {
@@ -128,7 +129,17 @@ main h2 {
   }
 }
 
-.logo-image {
-  width: 10%;
-  height: auto;
+header a {
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header a:hover {
+  background-color: #FFFFFF;
+  color: #6C47FF; /* Accent color */
 }
