@@ -67,6 +67,7 @@ body {
 .logo-image {
     width: 150%;
     height: auto;
+    margin-bottom: 20px;
 }
 
 /* Responsive Design */
@@ -77,7 +78,7 @@ body {
 
     .logo {
         left: 20px;
-        top: 30px;
+        top: 20px;
     }
 
     .logo-circle {
