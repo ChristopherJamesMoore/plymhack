@@ -1,7 +1,6 @@
 body {
     font-family: Copperplate, sans-serif;
     background-color: transparent;
-    background-image: url("localimg/browser_bg.png");
 }
 
 .header {
@@ -167,9 +166,9 @@ a on-hover {
     top: 200px; /* Distance from the top of the page */
     left: 60%; /* Center the search bar */
 }
-.background{
+.background {
     background-color: transparent;
-    display: absolute;
+    position: absolute;
     width: 100%;
     height: 100%;
 }
