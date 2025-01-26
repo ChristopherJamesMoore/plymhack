@@ -1,49 +1,134 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3e5f5; /* Light purple background */
+  color: #4a148c; /* Dark purple text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  background-color: #6a1b9a; /* Deep purple */
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header #auth-status {
+  font-size: 1rem;
+}
+
+header button {
+  background-color: #fff;
+  color: #6a1b9a; /* Deep purple text */
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 15px;
+}
+
+header button:hover {
+  background-color: #f3e5f5; /* Light purple */
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #4a148c; /* Dark purple */
+}
+
+#songs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.song {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.song img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.song h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #4a148c; /* Dark purple */
+}
+
+.song p {
+  font-size: 0.9rem;
+  color: #6a1b9a; /* Deep purple */
+  margin: 5px 0;
+}
+
+.song button {
+  background-color: #6a1b9a; /* Deep purple */
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.song button:hover {
+  background-color: #4a148c; /* Darker purple */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
   }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #6200ea;
-    color: white;
+
+  main {
+    padding: 10px;
   }
-  
-  #songs-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
-    padding: 1rem;
-  }
-  
-  .song-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    text-align: center;
-    background-color: #f9f9f9;
-  }
-  
-  .song-cover {
+
+  .song {
     max-width: 100%;
-    border-radius: 8px;
   }
-  
-  .like-button {
-    margin-top: 0.5rem;
-    padding: 0.5rem 1rem;
-    background-color: #6200ea;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .like-button:hover {
-    background-color: #3700b3;
-  }
-  
+}
+
+.logo-image {
+  width: 10%;
+  height: auto;
+}
