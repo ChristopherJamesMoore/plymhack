@@ -1,11 +1,123 @@
-body {
-    font-family: Copperplate, sans-serif;
+
+h1 {
+    text-align: center
+}
+
+p {
+    text-align: center
+}
+
+h1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 200%;
+}
+
+p {
+    color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+.navigation {
     background-color: transparent;
 }
+
+.navigation li {
+    float: left;
+    list-style: none;
+
+}
+
+.navigation ul {
+    overflow: auto;
+    padding:12px;
+    margin: 0;
+}
+
+.navigation ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    margin:0px;
+    justify-content: center;
+    
+}
+
+body {
+    justify-content: center;
+    background:#2A2A2A;
+    margin: 15px;
+    align-items: center;
+    min-height: 100vh;
+   
+}
+.row{
+    margin: auto;
+    width: 43%;
+    justify-content: center;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.container-form {
+    display: flex;
+    background: transparent;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border-color:#6C47FF;
+}
+.control-group{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.row {
+    color: #6C47FF;;
+    font-weight: bold;
+    font-family: verdana;
+    width: 350px;
+}
+.btn-primary {
+    color: white;
+    text-decoration: none;
+    background: transparent;
+    border-radius: 30px;
+    font-family: verdana;
+    font-weight: bold;
+    width: 100px;
+    height: 80px;
+    font-size: 90%;
+    border-color:#6C47FF;
+}
+.form-group{
+    color: brown;
+}
+.form-group-col-md-12{
+    color: white;
+}
+
+input {
+    background-color: White;
+    border: 2px solid transparent;
+    margin: 6px;
+    height: 50px;
+    width: 280px;
+    color: white;
+    border-radius: 30px;
+    font-size: 40px;
+    color: white;
+}
+
 
 .header {
     width: 100%;
     position: relative;
+    color: #2A2A2A;
 }
 
 .navbar {
@@ -14,6 +126,7 @@ body {
     align-items: center;
     height: 70px;
     padding: 0 2rem;
+    background-color: #2A2A2A;
 }
 
 .menu {
@@ -84,9 +197,6 @@ body {
     width: 100%;
 }
 
-.big-logo {
-    margin-right: 150%;
-}
 
 h1 {
     color: white;
@@ -166,74 +276,9 @@ a on-hover {
     top: 200px; /* Distance from the top of the page */
     left: 60%; /* Center the search bar */
 }
+
 .background {
-    background-color: transparent;
-    position: absolute;
     width: 100%;
     height: 100%;
-}
-body {
-    justify-content: center;
-    background:antiquewhite;
-    margin: 10px;
-    align-items: center;
-
-}
-.row{
-    margin: auto;
-    width: 43%;
-    justify-content: center;
-    text-align: center;
-}
-h2 {
-    text-align: center;
-}
-.container-form {
-    display: flex;
-    background: darksalmon;
-    min-height: 50vh;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    width: 620px;
-}
-.control-group{
-    color: brown;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-}
-.row {
-    color: brown;
-    font-weight: bold;
-    font-family: verdana;
-    width: 350px;
-}
-.btn-primary {
-    color: white;
-    text-decoration: none;
-    background: coral;
-    border-radius: 30px;
-    font-family: verdana;
-    font-weight: bold;
-    width: 100px;
-    height: 80px;
-    font-size: 90%;
-}
-.form-group{
-    color: brown;
-}
-.form-group-col-md-12{
-    color: black;
-}
-
-input {
-    background-color: White;
-    border: 2px solid transparent;
-    margin: 6px;
-    height: 50px;
-    width: 280px;
-    color: white;
-    border-radius: 30px;
-    font-size: 40px;
-    color: black;
+    position: relative;
 }
