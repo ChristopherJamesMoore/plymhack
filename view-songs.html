@@ -21,5 +21,20 @@
         <p>Loading songs...</p>
     </div>
   </main>
+  <div id="add-song-section">
+    <h2>Add a New Song</h2>
+    <form id="add-song-form">
+      <label for="song-name">Song Name:</label>
+      <input type="text" id="song-name" placeholder="Enter song name" required />
+      
+      <label for="song-audio">Audio URL:</label>
+      <input type="url" id="song-audio" placeholder="Enter audio URL" required />
+      
+      <label for="song-cover">Cover Image URL:</label>
+      <input type="url" id="song-cover" placeholder="Enter cover image URL" required />
+      
+      <button type="submit">Add Song</button>
+    </form>
+  </div>
 </body>
 </html>
